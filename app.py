@@ -5,7 +5,7 @@ async def on_startup(dp):
     from utils.set_bot_commands import set_default_commands
     await set_default_commands(dp)
 
-    print("Бот запущен")
+    print("Бот запущен ")
 
 
 if __name__ == "__main__":
