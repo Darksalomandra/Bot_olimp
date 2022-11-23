@@ -23,7 +23,6 @@ async def command_olimp(message: types.Message):
     await message.answer("Введите предмет:")
 
 
-
 @dp.message_handler(text=subject_search)
 async def answer1(message: types.Message):
     global s
