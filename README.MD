@@ -17,7 +17,7 @@ python -m venv venv && . venv/Scripts/activate # (Win10)
 Установить зависимости из файла requirements.txt:
 ```bash
 pip install -r requirements.txt
-```
+``` 
 - Переименуйте файл .env.example на .env
 - Поменяйте BOT_TOKEN
 
