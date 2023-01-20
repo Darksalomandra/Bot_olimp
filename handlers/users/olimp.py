@@ -20,26 +20,26 @@ type_search = ([
 
 @dp.message_handler(text='/olimp')
 async def command_olimp(message: types.Message):
-    await message.answer("Введите предмет:")
+    await message.answer("Введите предмет (список в разделе помощь):")
 
 
 @dp.message_handler(text=subject_search)
 async def answer1(message: types.Message):
     global s
-    s = message.text.capitalize()
-    await message.answer("Введите класс:")
+    s = message.text
+    await message.answer("Введите класс от 1 до 11:")
 
 
 @dp.message_handler(text=class_search)
 async def command_olimp(message: types.Message):
     global c
-    c = message.text.capitalize()
-    await message.answer("Введите тип:")
+    c = message.text
+    await message.answer("Введите тип (список в разделе помощь):")
 
 
 @dp.message_handler(text=type_search)
 async def command_olimp(message: types.Message):
     global t
-    t = message.text.capitalize()
+    t = message.text
     f = parse_text(s, c, t)
     await message.answer(f)
